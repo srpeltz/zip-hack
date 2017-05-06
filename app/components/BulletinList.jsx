@@ -9,7 +9,7 @@ export var BulletinList = React.createClass({
 		var {bulletins} = this.props
 
 		var renderBulletins = () => {
-			if (filteredTodos.length === 0) {
+			if (bulletins.length === 0) {
 				return <p>No bulletins...</p>
 			} else {
 				return bulletins.map((bulletin) => {

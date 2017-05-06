@@ -11,7 +11,7 @@ export var Dashboard = React.createClass({
 		<div>
 			<h1>Dashboard</h1>
 			<Menu/>
-			<BulletinList bulletins={seedBulletins}/>
+			<BulletinList bulletins={dummyBulletins}/>
 		</div>
 		)
 	}
@@ -19,10 +19,17 @@ export var Dashboard = React.createClass({
 
 export default Dashboard
 
-var seedBulletins = [{
-		type: 'alert',
-		text: 'You '
-	}
-
-]
+var dummyBulletins = [{
+	id: 1,
+	type: 'alert',
+	text: 'Add some goals.'
+},{
+	id: 2,
+	type: 'alert',
+	text: 'Try adding a new job application.'
+},{
+	id: 3,
+	type: 'alert',
+	text: 'Try adding a new contact.'
+}]
 
