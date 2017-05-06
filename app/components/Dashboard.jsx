@@ -6,8 +6,8 @@ export var Dashboard = React.createClass({
 	render: function() {
 		return (
 		<div>
-			<h1>Dashboard Component</h1>
-			{this.props.children}
+			<h1>Dashboard</h1>
+			
 		</div>
 		)
 	}
