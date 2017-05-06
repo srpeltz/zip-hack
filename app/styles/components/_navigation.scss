@@ -1,0 +1,35 @@
+
+.navigation{
+	margin-top:15px;
+}
+
+.navigation-dot{
+	margin-left: 10px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	float: left;
+}
+
+.chef{
+	background-color: $chef-color;
+}
+
+.ideas{
+	background-color: $ideas-color;
+}
+
+.projects{
+	background-color: $projects-color;
+	clear: right;
+}
+
+.recipes{
+	background-color: $recipes-color;
+}
+
+.current > .navigation-dot{
+	border: 2px solid $off-black;
+	width: 18px;
+	height: 18px;
+}
