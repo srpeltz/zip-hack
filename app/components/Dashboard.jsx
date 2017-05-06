@@ -7,7 +7,10 @@ export var Dashboard = React.createClass({
 		return (
 		<div>
 			<h1>Dashboard</h1>
-			
+			<div className=''>
+				
+
+			</div>
 		</div>
 		)
 	}
