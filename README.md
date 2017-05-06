@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+# Alex's Here!
+# Stevie's Here!
+
+=======
+>>>>>>> 7271070861a0fc5d425d71cc69b55994d687ac06
 # Zip Hack App
 
 Quick link to [backend](https://github.com/gnordhielm/zip-hack-backend).
