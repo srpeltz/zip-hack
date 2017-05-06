@@ -21,14 +21,14 @@ export var Signup = React.createClass({
 	render: function() {
 		return (
 		<div className='modal'>
-			<div className='trigger' onClick={this.launchModal}>
-				<p>Sign Up</p>
-			</div>
+			<a className='trigger' onClick={this.launchModal}>
+				<button type="button" className="button button-padding">Sign up</button>
+			</a>
 
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						<p onClick={this.closeModal}>Close</p>
+						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
 						<h1>Signup Component</h1>
 					</div>
 				</div>
