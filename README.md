@@ -1,5 +1,3 @@
-# Stevie's Here!
-
 # Zip Hack App
 
 Quick link to [backend](https://github.com/gnordhielm/zip-hack-backend).
