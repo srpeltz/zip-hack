@@ -6,7 +6,7 @@ export var Signup = React.createClass({
 	getInitialState: function(){
 		return {
 			open: false,
-			contentClick: null
+			stopClose: false
 		}
 	},
 	launchModal: function() {
@@ -14,25 +14,15 @@ export var Signup = React.createClass({
 			open: true
 		})
 	},
-	stopCloseModal: function(component) {
-		console.log('closeModal fired with', component)
-		if (component === 'content') {
-			this.setState({
-				contentClick: true
-			})	
-		} else if (!this.state.contentClick) {
-			this.setState({
-				open: false
-			})
-		}
+	stopClose: function() {
+		console.log('stopClose')
+		this.setState({
+			stopClose: true
+		})
 	},
-	closeModal: function(component) {
-		console.log('closeModal fired with', component)
-		if (component === 'content') {
-			this.setState({
-				contentClick: true
-			})	
-		} else if (!this.state.contentClick) {
+	closeModal: function() {
+		console.log('closeModal')
+		if (!this.state.stopClose) {
 			this.setState({
 				open: false
 			})
@@ -47,7 +37,7 @@ export var Signup = React.createClass({
 
 			{this.state.open &&
 				<div className='background' onClick={this.closeModal}>
-					<div className='content' onClick={stopCloseModal}>
+					<div className='content' onClick={this.stopClose}>
 						<h1>Signup Component</h1>
 					</div>
 				</div>
