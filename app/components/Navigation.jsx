@@ -6,7 +6,7 @@ export var Navigation = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<nav className="navbar navbar-toggleable-md navbar-light bg-faded">
+				<nav className="navbar navbar-toggleable-md navbar-light">
 				  <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				    <span className="navbar-toggler-icon"></span>
 				  </button>
