@@ -1,4 +1,3 @@
-
 import React from 'react'
 import {Link} from 'react-router'
 
@@ -14,28 +13,30 @@ export var Signup = React.createClass({
 			open: true
 		})
 	},
-	stopClose: function() {
-		console.log('stopClose')
-		this.setState({
-			stopClose: true
-		})
-	},
 	closeModal: function() {
-		console.log('closeModal')
-		if (!this.state.stopClose) {
-			this.setState({
-				open: false
-			})
-		}
+		this.setState({
+			open: false
+		})
 	},
 	render: function() {
 		return (
-		<div>
-			<h1>Signup Component</h1>
+		<div className='modal'>
+			<div className='trigger' onClick={this.launchModal}>
+				<p>Sign Up</p>
+			</div>
+
+			{this.state.open &&
+				<div className='background'>
+					<div className='trigger' className='content'>
+						<p onClick={this.closeModal}>Close</p>
+						<h1>Signup Component</h1>
+					</div>
+				</div>
+			}
+
 		</div>
 		)
 	}
 })
 
 export default Signup
-
