@@ -1,3 +1,5 @@
+# Stevie's Here!
+
 # Zip Hack App
 
 We are creating an application for job seekers who are managing bifurcated professional lives: career changers, freelancers looking for full-time work, etc. It is a time management and information organization tool meant to help people achieve concrete goals - and not resign themselves to an idle or fruitless job search.
