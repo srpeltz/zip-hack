@@ -1,8 +1,5 @@
 
 import React from 'react'
-import * as Redux from 'react-redux'
-
-import * as actions from 'actions'
 import {Link} from 'react-router'
 
 
@@ -21,11 +18,11 @@ export var App = React.createClass({
 	render: function() {
 		return (
 		<div id="app-wrapper" className={this.getWrapperClass()}>
-			{this.props.children}
+			<h1>Hello World</h1>
 		</div>
 	)
 }
 })
 
-export default Redux.connect()(App)
+export default App
 
