@@ -6,7 +6,11 @@ import App from 'App'
 import Landing from 'Landing'
 import Dashboard from 'Dashboard'
 
-// load app css
+// Load foundation
+require('style!css!foundation-sites/dist/foundation.min.css')
+$(document).foundation()
+
+// App css
 require('style!css!sass!applicationStyles')
 
 // render the application with the store, router

@@ -30,19 +30,8 @@ export var Signup = React.createClass({
 	},
 	render: function() {
 		return (
-		<div className='modal'>
-			<div className='trigger' onClick={this.launchModal}>
-				<p>Launch Modal</p>
-			</div>
-
-			{this.state.open &&
-				<div className='background' onClick={this.closeModal}>
-					<div className='content' onClick={this.stopClose}>
-						<h1>Signup Component</h1>
-					</div>
-				</div>
-			}
-
+		<div>
+			<h1>Signup Component</h1>
 		</div>
 		)
 	}
