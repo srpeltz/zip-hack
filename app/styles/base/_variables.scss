@@ -1,51 +1,7 @@
 
-// Typography
-
-$charter:'Charter Roman';
-$charter-italic:'Charter Italic';
-
-$charter-bold-1:'Charter Bold';
-$charter-bold-1-italic:'Charter Bold Italic';
-
-$charter-bold-2:'Charter Black';
-$charter-bold-2-italic:'Charter Black Italic';
-
 // Color scheme
 
-$off-white: #f3f1ed;
-$off-black: #42403a;
-$off-grey: #d9d1bb;
-
-$orange-neutral: #f1d098;
-$orange: #f09f5e;
-$blue-neutral: #d9d1bb;
-$blue: #698c8c;
+$text: #222;
 
 // Global colors
-$background-color: $off-white;
 
-$chef-border-color: $blue-neutral;
-$chef-color: $blue-neutral;
-$ideas-border-color: $orange-neutral;
-$ideas-color: $orange-neutral;
-$recipes-border-color: $orange;
-$recipes-color: $orange;
-$projects-border-color: $blue;
-$projects-color: $blue;
-$help-border-color: $off-black;
-$help-color: $off-black;
-
-$default-text-color: $off-black;
-$default-font: $charter;
-
-// Form Colors
-$button-color: $off-black;
-$button-hover-color: $blue-neutral;
-$button-text-color: $off-white;
-
-// Navigation colors
-
-$top-color: $orange-neutral;
-$right-color: $orange;
-$bottom-color: $blue;
-$left-color: $blue-neutral;
