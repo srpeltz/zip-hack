@@ -21,12 +21,14 @@ export var Login = React.createClass({
 	render: function() {
 		return (
 		<div className='modal'>
-			<p className='trigger' onClick={this.launchModal}>Log In</p>
+			<a className='trigger' onClick={this.launchModal}>
+				<button type="button" className="button">Log In</button>
+			</a>
 
 			{this.state.open &&
 				<div className='background'>
-					<div className='content'>
-						<p className='trigger' onClick={this.closeModal}>Close</p>
+					<div className='trigger' className='content'>
+						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
 						<h1>Login Component</h1>
 					</div>
 				</div>
