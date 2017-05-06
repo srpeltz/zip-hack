@@ -1,0 +1,16 @@
+
+.navigation-link {
+	text-align:left;
+
+	margin: 0 10px 15px 0;
+
+	color: $off-grey;
+	font-family: $charter-bold-1;
+	font-size: 20px;
+	display: inline;
+	text-decoration: none;
+
+	&:hover {
+		color: $off-black;
+	}
+}

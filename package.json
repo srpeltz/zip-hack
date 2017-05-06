@@ -1,0 +1,19 @@
+{
+  "name": "job-tracker",
+  "version": "1.0.0",
+  "description": "An application for job seekers to manage applications, interviews, and contacts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnordhielm/zip-hack.git"
+  },
+  "author": "Gus Nordhielm, Steven Peltzer, Alex Espinoza, Marina Lupin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnordhielm/zip-hack/issues"
+  },
+  "homepage": "https://github.com/gnordhielm/zip-hack#readme"
+}
