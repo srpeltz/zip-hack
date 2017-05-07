@@ -34,7 +34,7 @@ export var Signup = React.createClass({
 						<form>
 							<div className="row">
 							    <div className="small-3 columns">
-							      	<label for="middle-label" className="text-left middle">First Name</label>
+							      	<label htmlFor="middle-label" className="text-left middle">First Name</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="text" id="middle-label" placeholder="Jane"></input>
@@ -42,7 +42,7 @@ export var Signup = React.createClass({
 							</div>
 							<div className="row">
 								<div className="small-3 columns">
-							      	<label for="middle-label" className="text-left middle">Last Name</label>
+							      	<label htmlFor="middle-label" className="text-left middle">Last Name</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="text" id="middle-label" placeholder="Doe"></input>
@@ -51,7 +51,7 @@ export var Signup = React.createClass({
 							    
 							<div className="row">
 								<div className="small-3 columns">
-							      	<label for="middle-label" className="text-left middle">Email</label>
+							      	<label htmlFor="middle-label" className="text-left middle">Email</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="email" id="middle-label" placeholder="example@gmail.com"></input>
@@ -60,15 +60,15 @@ export var Signup = React.createClass({
 
 							<div className="row">
 								<div className="small-3 columns">
-							      	<label for="middle-label" className="text-left middle">Password</label>
+							      	<label htmlFor="middle-label" className="text-left middle">Password</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="password" id="middle-label" placeholder="password"></input>
 							    </div>
 							</div>
 
-							<div class="input-group-button">
-    							<input type="submit" class="button" value="Sign up"></input>
+							<div className="input-group-button">
+    							<input type="submit" className="button" value="Sign up"></input>
   							</div>				 
 						</form>
 					</div>

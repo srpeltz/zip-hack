@@ -1,17 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-export var Login = React.createClass({
+export var QuickstartForm = React.createClass({
 	getInitialState: function(){
 		return {
 			open: false,
 			stopClose: false
 		}
-	},
-	handleClick: function(e) {
-		e.preventDefault()
-
-		window.location.replace('/dashboard')
 	},
 	launchModal: function() {
 		this.setState({
@@ -27,14 +22,14 @@ export var Login = React.createClass({
 		return (
 		<div className='modal'>
 			<a className='trigger' onClick={this.launchModal}>
-				<div>Log In</div>
+				<button type="button" className="button">New Job Application</button>
 			</a>
 
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
 						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
-						<h1>Log In</h1>
+						<h1>New Application</h1>
 						<br/>
 						<form>
 						  	<div className="row">
@@ -56,8 +51,8 @@ export var Login = React.createClass({
 						    </div>
 
 						    <div className="input-group-button">
-    							<input type="submit" className="button" value="Log in" onClick={this.handleClick}></input>
-  							</div>
+    							<input type="submit" className="button" value="Log in"></input>
+  							</div>	
 						</form>
 					</div>
 				</div>
@@ -68,4 +63,4 @@ export var Login = React.createClass({
 	}
 })
 
-export default Login
+export default QuickstartForm
