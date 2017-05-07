@@ -51,7 +51,7 @@ export var Login = React.createClass({
 						    </div>
 
 						    <div class="input-group-button">
-    							<input type="submit" class="button" value="Log in"></input>
+    							<input type="submit" className="button" value="Log in"></input>
   							</div>	
 						</form>
 					</div>
