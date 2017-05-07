@@ -22,7 +22,6 @@ export var BulletinList = React.createClass({
 
 		return (
 			<div>
-				<h1>BulletinList</h1>
 				{renderBulletins()}
 			</div>
 		)
