@@ -9,11 +9,10 @@ export var Bulletin = React.createClass({
 		return (
 		<div className={'bulletin ' + type}>
 			<p>{text}</p>
-			
+
 		</div>
 		)
 	}
 })
 
 export default Bulletin
-
