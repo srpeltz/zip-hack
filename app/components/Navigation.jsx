@@ -6,16 +6,21 @@ import Login from 'Login'
 export var Navigation = React.createClass({
 	render: function() {
 		return (
-			<div className="top-bar topbar-submenu-background">
-			  <div className="top-bar-left topbar-submenu-background">
-			    <ul className="dropdown menu topbar-submenu-background" data-dropdown-menu>
-			      <li className="menu-text topbar-submenu-background">Job Tracker</li>
-			      <li className="topbar-submenu-background"><a href="/">Home</a></li>
-			      <li className="topbar-submenu-background"><a href="/dashboard">Dashboard</a></li>
-			      <li className="topbar-submenu-background"><Login/></li>
+			<div className="top-bar">
+			  <div className="top-bar-left">
+			    <ul className="dropdown menu">
+			      <li className="menu-text ">Job Tracker</li>
+			      <li><a href="/">Home</a></li>
+			      <li><a href="/dashboard">Dashboard</a></li>
 			    </ul>
+				</div>
+				<div className="top-bar-right">
+					<ul className="dropdown menu ">
+						<Login/>
+					</ul>
 			  </div>
 			</div>
+
 	)
 }
 })
