@@ -6,7 +6,7 @@ export var Bulletin = React.createClass({
 	render: function() {
 		var {type, text, company, title, location, 
 			created_at, applied, name, email, phone, 
-			round, date, contacts, followup} = this.props
+			round, date, contacts, followup, position} = this.props
 
 		return (
 		
@@ -14,7 +14,8 @@ export var Bulletin = React.createClass({
 			<div className={'bulletin ' + type}>
 				<div className="row">
 					<div className="small-8 columns">
-						<p className="contact-name">{name}</p>
+						<h5 className="contact-name">{name}</h5>
+						<h5 className="position">{position}</h5>
 						<p className="company">{company}</p>
 						<p className="title">{title}</p>
 						<p className="round">{round}</p>

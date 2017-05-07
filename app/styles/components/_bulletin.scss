@@ -1,10 +1,11 @@
 .bulletin {
-	color: white;
+	color: black;
 	width: 100%;
 	margin: 0 0 5px;
 	padding: 5px;
-	background-color: #9cca18;
-	border-radius: 25px;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid #9cca18;
 }
 
 .type {
@@ -15,6 +16,7 @@
 .company,
 .title,
 .contact-name,
+.position,
 .round {
 	text-align: left;
 }
@@ -25,6 +27,12 @@
 .contact-email,
 .date {
 	text-align: right;
+}
+
+.contact-name, 
+.position {
+	text-decoration: bold;
+	color: #9cc750;
 }
 
 img {
