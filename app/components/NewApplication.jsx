@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-export var QuickstartForm = React.createClass({
+export var NewApplication = React.createClass({
 	getInitialState: function(){
 		return {
 			open: false,
@@ -9,6 +9,7 @@ export var QuickstartForm = React.createClass({
 		}
 	},
 	launchModal: function() {
+		console.log('launchModal')
 		this.setState({
 			open: true
 		})
@@ -21,9 +22,7 @@ export var QuickstartForm = React.createClass({
 	render: function() {
 		return (
 		<div className='modal'>
-			<a className='trigger' onClick={this.launchModal}>
-				<button type="button" className="button">New Job Application</button>
-			</a>
+			<button type="button" className="button trigger" onClick={this.launchModal}>Add Job Application</button>
 
 			{this.state.open &&
 				<div className='background'>
@@ -63,4 +62,4 @@ export var QuickstartForm = React.createClass({
 	}
 })
 
-export default QuickstartForm
+export default NewApplication

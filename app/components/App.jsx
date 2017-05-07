@@ -10,7 +10,7 @@ export var App = React.createClass({
 		<div>
 			<Navigation/>
 			<div className='row'>
-				<div className='columns medium-6 large-4 small-centered'>
+				<div className='columns medium-8 large-7 small-centered text-center'>
 					{this.props.children}
 				</div>
 			</div>
@@ -21,4 +21,3 @@ export var App = React.createClass({
 })
 
 export default App
-

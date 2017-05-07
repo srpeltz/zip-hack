@@ -36,7 +36,6 @@ export var Login = React.createClass({
 						
 						<h3>Welcome</h3>
 						<br/>
-
 						<form>
 						  	<div className="row">
 							    <div className="small-3 columns">
