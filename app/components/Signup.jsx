@@ -29,7 +29,8 @@ export var Signup = React.createClass({
 				<div className='background'>
 					<div className='trigger' className='content'>
 						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
-						<h1>Signup Component</h1>
+						<h1>Sign Up</h1>
+						<br/>
 						<form>
 							<div className="row">
 							    <div className="small-3 columns">
