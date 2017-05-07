@@ -34,7 +34,7 @@ export var Login = React.createClass({
 						<form>
 						  	<div className="row">
 							    <div className="small-3 columns">
-							    	<label for="middle-label" className="text-left middle">Email</label>
+							    	<label htmlFor="middle-label" className="text-left middle">Email</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="email" id="middle-label" placeholder="example@gmail.com"></input>
@@ -43,15 +43,15 @@ export var Login = React.createClass({
 
 						    <div className="row">
 						    	<div className="small-3 columns">
-						      		<label for="middle-label" className="text-left middle">Password</label>
+						      		<label htmlFor="middle-label" className="text-left middle">Password</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="password" id="middle-label" placeholder="password"></input>
 							    </div>
 						    </div>
 
-						    <div class="input-group-button">
-    							<input type="submit" class="button" value="Log in"></input>
+						    <div className="input-group-button">
+    							<input type="submit" className="button" value="Log in"></input>
   							</div>
 						</form>
 					</div>

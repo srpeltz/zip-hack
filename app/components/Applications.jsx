@@ -7,6 +7,7 @@ export var Applications = React.createClass({
 		return (
 		<div>
 			<h1>Applications</h1>
+			
 		</div>
 		)
 	}
@@ -14,3 +15,6 @@ export var Applications = React.createClass({
 
 export default Applications
 
+var applications = [{
+
+}]

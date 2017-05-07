@@ -17,7 +17,7 @@ export var Navigation = React.createClass({
 			  </div>
 				<div className='top-bar-right'>
 					<ul className='menu'>
-					      <li className="topbar-submenu-background">Log Out</li>
+					      <li className="topbar-submenu-background"><a href="#">Log Out</a></li>
 					</ul>
 				</div>
 			</div>
