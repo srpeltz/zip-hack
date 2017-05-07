@@ -26,7 +26,6 @@ var applications = [{
   }
 ]
 
-
 var contacts = [{
     name: 'John Doe',
     email: 'john.doe@gmail.com',

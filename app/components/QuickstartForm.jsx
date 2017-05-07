@@ -1,17 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-export var Login = React.createClass({
+export var QuickstartForm = React.createClass({
 	getInitialState: function(){
 		return {
 			open: false,
 			stopClose: false
 		}
-	},
-	handleClick: function(e) {
-		e.preventDefault()
-
-		window.location.replace('/dashboard')
 	},
 	launchModal: function() {
 		this.setState({
@@ -27,16 +22,15 @@ export var Login = React.createClass({
 		return (
 		<div className='modal'>
 			<a className='trigger' onClick={this.launchModal}>
-				<div>Log In</div>
+				<button type="button" className="button">Fill out this form.</button>
 			</a>
 
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						
-						<h3>Welcome</h3>
+						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
+						<h1>Quickstart</h1>
 						<br/>
-
 						<form>
 						  	<div className="row">
 							    <div className="small-3 columns">
@@ -56,9 +50,8 @@ export var Login = React.createClass({
 							    </div>
 						    </div>
 
-						    <div class="input-group-button">
-    							<input type="submit" className="button login-form-button" value="Login"></input>
-    							<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
+						    <div className="input-group-button">
+    							<input type="submit" className="button" value="Log in"></input>
   							</div>	
 						</form>
 					</div>
@@ -70,4 +63,4 @@ export var Login = React.createClass({
 	}
 })
 
-export default Login
+export default QuickstartForm

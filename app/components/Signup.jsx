@@ -30,10 +30,11 @@ export var Signup = React.createClass({
 					<div className='trigger ' className='content'>
 						
 						<h3>Sign up</h3>
+						<br/>
 						<form>
 							<div className="row">
 							    <div className="small-3 columns">
-							      	<label for="middle-label" className="text-left middle">First Name</label>
+							      	<label htmlFor="middle-label" className="text-left middle">First Name</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="text" id="middle-label" placeholder="Jane"></input>
@@ -41,7 +42,7 @@ export var Signup = React.createClass({
 							</div>
 							<div className="row">
 								<div className="small-3 columns">
-							      	<label for="middle-label" className="text-left middle">Last Name</label>
+							      	<label htmlFor="middle-label" className="text-left middle">Last Name</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="text" id="middle-label" placeholder="Doe"></input>
@@ -50,7 +51,7 @@ export var Signup = React.createClass({
 							    
 							<div className="row">
 								<div className="small-3 columns">
-							      	<label for="middle-label" className="text-left middle">Email</label>
+							      	<label htmlFor="middle-label" className="text-left middle">Email</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="email" id="middle-label" placeholder="example@gmail.com"></input>
@@ -59,7 +60,7 @@ export var Signup = React.createClass({
 
 							<div className="row">
 								<div className="small-3 columns">
-							      	<label for="middle-label" className="text-left middle">Password</label>
+							      	<label htmlFor="middle-label" className="text-left middle">Password</label>
 							    </div>
 							    <div className="small-9 columns">
 							      	<input type="password" id="middle-label" placeholder="password"></input>
@@ -70,6 +71,7 @@ export var Signup = React.createClass({
     							<input type="submit" className="button" value="Sign up"></input>
     							<a type="button" className="alert button" onClick={this.closeModal}>Close</a>				 
   							</div>
+
 						</form>
 					</div>
 				</div>
