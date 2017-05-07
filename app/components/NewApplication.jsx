@@ -5,21 +5,103 @@ export var NewApplication = React.createClass({
 	getInitialState: function(){
 		return {
 			open: false,
-			stopClose: false
+			part: 1
 		}
 	},
 	launchModal: function() {
-		console.log('launchModal')
 		this.setState({
 			open: true
 		})
 	},
-	closeModal: function() {
+	closeModal: function(e) {
+		e.preventDefault()
 		this.setState({
 			open: false
 		})
 	},
+	handleNext: function(e) {
+		e.preventDefault()
+		this.setState({
+			part: 2
+		})
+	},
 	render: function() {
+
+		var that = this
+
+		function getForm() {
+			switch (that.state.part) {
+				case 1:
+					return (
+						<form>
+			
+						  	<div className="row">
+							    <div className="small-4 columns">
+							    	<label className="text-left middle">Job Title</label>
+							    </div>
+							    <div className="small-8 columns">
+							      	<input type="text"/>
+							    </div>
+							</div>
+
+						    <div className="row">
+						    	<div className="small-4 columns">
+						      		<label className="text-left middle">Company Name</label>
+							    </div>
+							    <div className="small-8 columns">
+							      	<input type="text"/>
+							    </div>
+						    </div>
+
+						    <div className="row">
+						    	<div className="small-4 columns">
+						      		<label className="text-left middle">Link to Posting</label>
+							    </div>
+							    <div className="small-8 columns">
+							      	<input type="text"/>
+							    </div>
+						    </div>
+
+						    <br/>
+
+						    <div className="input-group-button">
+								<a href="#" 
+								   className="alert-text" 
+								   value="Cancel"
+								   onClick={that.closeModal}>Cancel</a>
+    							<input type="submit" 
+    								   className="button" 
+    								   value="Next"
+    								   onClick={that.handleNext}/>
+  							</div>	
+						</form>
+					)
+					break
+				case 2:
+					return (
+						<form>
+							<p>Please keep this open while you complete your application.</p>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+						</form>
+					)
+					break
+			}
+		}
+
 		return (
 		<div className='modal'>
 			<button type="button" className="button trigger" onClick={this.launchModal}>Add Job Application</button>
@@ -27,32 +109,8 @@ export var NewApplication = React.createClass({
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
-						<h1>New Application</h1>
-						<br/>
-						<form>
-						  	<div className="row">
-							    <div className="small-3 columns">
-							    	<label htmlFor="middle-label" className="text-left middle">Email</label>
-							    </div>
-							    <div className="small-9 columns">
-							      	<input type="email" id="middle-label" placeholder="example@gmail.com"></input>
-							    </div>
-							</div>
-
-						    <div className="row">
-						    	<div className="small-3 columns">
-						      		<label htmlFor="middle-label" className="text-left middle">Password</label>
-							    </div>
-							    <div className="small-9 columns">
-							      	<input type="password" id="middle-label" placeholder="password"></input>
-							    </div>
-						    </div>
-
-						    <div className="input-group-button">
-    							<input type="submit" className="button" value="Log in"></input>
-  							</div>	
-						</form>
+						<h2>New Application</h2>
+						{getForm()}
 					</div>
 				</div>
 			}

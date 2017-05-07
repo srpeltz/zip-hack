@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router'
 
+
+
 export var Login = React.createClass({
 	getInitialState: function(){
 		return {
@@ -26,16 +28,13 @@ export var Login = React.createClass({
 	render: function() {
 		return (
 		<div className='modal'>
-			<a className='trigger' onClick={this.launchModal}>
-				<div>Log In</div>
-			</a>
+			<a className='trigger' onClick={this.launchModal}>Log In</a>
 
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						
-						<h3>Welcome</h3>
-						<br/>
+
+						<h1>Log In</h1>
 						<form>
 						  	<div className="row">
 							    <div className="small-3 columns">
@@ -55,10 +54,13 @@ export var Login = React.createClass({
 							    </div>
 						    </div>
 
-						    <div class="input-group-button">
-    							<input type="submit" className="button login-form-button" value="Login"></input>
-    							<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
-  							</div>	
+						    <br/>
+
+						    <div className="input-group-button">
+								<a href="#" className="alert-text" onClick={this.closeModal}>Close</a>
+    							<input type="submit" className="button" value="Log in" onClick={this.handleClick}></input>
+  							</div>
+
 						</form>
 					</div>
 				</div>
