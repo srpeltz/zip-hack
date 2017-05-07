@@ -14,17 +14,19 @@ export var Dashboard = React.createClass({
 			
 			<div className="bulletin goals">
 				<div className="row">
-					
 					<div className="small-4 columns">
 						<img src='http://placehold.it/150x150'></img>
+						<p>App Goals</p>
 					</div>
 					
 					<div className="small-4 columns">
 						<img src='http://placehold.it/150x150'></img>
+						<p>Interview Goals</p>
 					</div>
 
 					<div className="small-4 columns">
 						<img src='http://placehold.it/150x150'></img>
+						<p>Follow-ups Goals</p>
 					</div>
 				</div>
 				
@@ -76,7 +78,8 @@ var dummyBulletins = [{
     email: 'alex@gmail.com',
     phone: '555-555-5552',
     company: 'General Assembly',
-    title: 'Web Developer Instructor'
+    title: 'Web Developer Instructor',
+    interaction: 'Studied together.'
 },{
 	id: 6,
 	urgent: false,
@@ -85,7 +88,8 @@ var dummyBulletins = [{
     email: 'steve@gmail.com',
     phone: '555-555-5551',
     company: 'Freelance',
-    title: 'Web Developer'
+    title: 'Web Developer',
+    interaction: 'Worked on the hackathon together. Consider working together on a project.'
 },{
 	id: 7,
 	urgent: true,
