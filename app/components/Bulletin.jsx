@@ -7,7 +7,7 @@ export var Bulletin = React.createClass({
 		var {type, text} = this.props
 
 		return (
-		<div className='bulletin'>
+		<div className={'bulletin ' + type}>
 			<p>{text}</p>
 			
 		</div>
