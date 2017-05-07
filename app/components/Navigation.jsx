@@ -5,24 +5,15 @@ import {Link} from 'react-router'
 export var Navigation = React.createClass({
 	render: function() {
 		return (
-			<div>
-				<nav className="navbar navbar-toggleable-md navbar-light">
-				  <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				    <span className="navbar-toggler-icon"></span>
-				  </button>
-				  <a className="navbar-brand" href="/">Job Tracker</a>
-				  <div className="collapse navbar-collapse" id="navbarNav">
-				    <ul className="navbar-nav">
-							<li className="nav-item active">
-								<a className="nav-link" href='/'>Home</a>
-							</li>
-							<li className="nav-item active">
-								<a className="nav-link" href="/dashboard">Dashboard</a>
-							</li>
-				    </ul>
-				  </div>
-				</nav>
-		</div>
+			<div className="top-bar topbar-submenu-background">
+			  <div className="top-bar-left topbar-submenu-background">
+			    <ul className="dropdown menu topbar-submenu-background" data-dropdown-menu>
+			      <li className="menu-text topbar-submenu-background">Job Tracker</li>
+			      <li className="topbar-submenu-background"><a href="/">Home</a></li>
+			      <li className="topbar-submenu-background"><a href="/dashboard">Dashboard</a></li>
+			    </ul>
+			  </div>
+			</div>
 	)
 }
 })

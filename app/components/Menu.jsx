@@ -6,7 +6,7 @@ export var Menu = React.createClass({
 	render: function() {
 		return (
 		<div>
-			<h1>Menu</h1>
+			<input type='text' placeholder='Search bulletins...'/>
 			
 		</div>
 		)

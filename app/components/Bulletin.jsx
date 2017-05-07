@@ -4,9 +4,11 @@ import {Link} from 'react-router'
 
 export var Bulletin = React.createClass({
 	render: function() {
+		var {type, text} = this.props
+
 		return (
-		<div>
-			<h1>Bulletin</h1>
+		<div className={'bulletin ' + type}>
+			<p>{text}</p>
 			
 		</div>
 		)
