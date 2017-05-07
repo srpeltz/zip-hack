@@ -26,7 +26,8 @@ export var Signup = React.createClass({
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						<h1>Sign Up</h1>
+						<h3>Sign up</h3>
+						<br/>
 						<form>
 							<div className="row">
 							    <div className="small-3 columns">
@@ -65,10 +66,10 @@ export var Signup = React.createClass({
 
 							<br/>
 
-							<div className="input-group-button">
-								<a href="#" className="alert-text" onClick={this.closeModal}>Close</a>
+							<div class="input-group-button">
     							<input type="submit" className="button" value="Sign up"></input>
-  							</div>				 
+    							<a type="button" className="alert button" onClick={this.closeModal}>Close</a>		
+  							</div>
 						</form>
 					</div>
 				</div>

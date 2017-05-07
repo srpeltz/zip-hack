@@ -28,7 +28,7 @@ export var QuickstartForm = React.createClass({
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
+						
 						<h1>Quickstart</h1>
 						<br/>
 						<form>
@@ -52,6 +52,7 @@ export var QuickstartForm = React.createClass({
 
 						    <div className="input-group-button">
     							<input type="submit" className="button" value="Log in"></input>
+    							<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
   							</div>	
 						</form>
 					</div>

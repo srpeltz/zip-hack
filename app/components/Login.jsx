@@ -33,6 +33,7 @@ export var Login = React.createClass({
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
+
 						<h1>Log In</h1>
 						<form>
 						  	<div className="row">
@@ -59,6 +60,7 @@ export var Login = React.createClass({
 								<a href="#" className="alert-text" onClick={this.closeModal}>Close</a>
     							<input type="submit" className="button" value="Log in" onClick={this.handleClick}></input>
   							</div>
+
 						</form>
 					</div>
 				</div>
