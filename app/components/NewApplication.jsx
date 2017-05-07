@@ -5,7 +5,7 @@ export var NewApplication = React.createClass({
 	getInitialState: function(){
 		return {
 			open: false,
-			stopClose: false
+			part: 1
 		}
 	},
 	launchModal: function() {
@@ -19,18 +19,20 @@ export var NewApplication = React.createClass({
 			open: false
 		})
 	},
-	handleSubmit: function(e) {
+	handleNext: function(e) {
 		e.preventDefault()
+		this.setState({
+			part: 2
+		})
 	},
 	render: function() {
-		return (
-		<div className='modal'>
-			<button type="button" className="button trigger" onClick={this.launchModal}>Add Job Application</button>
 
-			{this.state.open &&
-				<div className='background'>
-					<div className='trigger' className='content'>
-						<h2>New Application</h2>
+		var that = this
+
+		function getForm() {
+			switch (that.state.part) {
+				case 1:
+					return (
 						<form>
 			
 						  	<div className="row">
@@ -66,13 +68,49 @@ export var NewApplication = React.createClass({
 								<a href="#" 
 								   className="alert-text" 
 								   value="Cancel"
-								   onClick={this.closeModal}>Cancel</a>
+								   onClick={that.closeModal}>Cancel</a>
     							<input type="submit" 
     								   className="button" 
-    								   value="Add"
-    								   onClick={this.handleSubmit}/>
+    								   value="Next"
+    								   onClick={that.handleNext}/>
   							</div>	
 						</form>
+					)
+					break
+				case 2:
+					return (
+						<form>
+							<p>Please keep this open while you complete your application.</p>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+							<h1>Spacer</h1>
+						</form>
+					)
+					break
+			}
+		}
+
+		return (
+		<div className='modal'>
+			<button type="button" className="button trigger" onClick={this.launchModal}>Add Job Application</button>
+
+			{this.state.open &&
+				<div className='background'>
+					<div className='trigger' className='content'>
+						<h2>New Application</h2>
+						{getForm()}
 					</div>
 				</div>
 			}
