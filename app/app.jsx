@@ -6,7 +6,7 @@ import App from 'App'
 import Landing from 'Landing'
 import Dashboard from 'Dashboard'
 import Strategy from 'Strategy'
-import Applications from 'Applications'
+import JobApplications from 'JobApplications'
 import Network from 'Network'
 
 // Load foundation
@@ -23,7 +23,7 @@ ReactDOM.render(
 			<Route path='/' component={Landing}/>
 			<Route path='/dashboard' component={Dashboard}/>
 			<Route path='/strategy' component={Strategy}/>
-			<Route path='/applications' component={Applications}/>
+			<Route path='/applications' component={JobApplications}/>
 			<Route path='/network' component={Network}/>
 		</Route>
 	</Router>,

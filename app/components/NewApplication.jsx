@@ -9,15 +9,18 @@ export var NewApplication = React.createClass({
 		}
 	},
 	launchModal: function() {
-		console.log('launchModal')
 		this.setState({
 			open: true
 		})
 	},
-	closeModal: function() {
+	closeModal: function(e) {
+		e.preventDefault()
 		this.setState({
 			open: false
 		})
+	},
+	handleSubmit: function(e) {
+		e.preventDefault()
 	},
 	render: function() {
 		return (
@@ -27,30 +30,47 @@ export var NewApplication = React.createClass({
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
-						<h1>New Application</h1>
-						<br/>
+						<h2>New Application</h2>
 						<form>
+			
 						  	<div className="row">
-							    <div className="small-3 columns">
-							    	<label htmlFor="middle-label" className="text-left middle">Email</label>
+							    <div className="small-4 columns">
+							    	<label className="text-left middle">Job Title</label>
 							    </div>
-							    <div className="small-9 columns">
-							      	<input type="email" id="middle-label" placeholder="example@gmail.com"></input>
+							    <div className="small-8 columns">
+							      	<input type="text"/>
 							    </div>
 							</div>
 
 						    <div className="row">
-						    	<div className="small-3 columns">
-						      		<label htmlFor="middle-label" className="text-left middle">Password</label>
+						    	<div className="small-4 columns">
+						      		<label className="text-left middle">Company Name</label>
 							    </div>
-							    <div className="small-9 columns">
-							      	<input type="password" id="middle-label" placeholder="password"></input>
+							    <div className="small-8 columns">
+							      	<input type="text"/>
 							    </div>
 						    </div>
 
+						    <div className="row">
+						    	<div className="small-4 columns">
+						      		<label className="text-left middle">Link to Posting</label>
+							    </div>
+							    <div className="small-8 columns">
+							      	<input type="text"/>
+							    </div>
+						    </div>
+
+						    <br/>
+
 						    <div className="input-group-button">
-    							<input type="submit" className="button" value="Log in"></input>
+								<a href="#" 
+								   className="alert-text" 
+								   value="Cancel"
+								   onClick={this.closeModal}>Cancel</a>
+    							<input type="submit" 
+    								   className="button" 
+    								   value="Add"
+    								   onClick={this.handleSubmit}/>
   							</div>	
 						</form>
 					</div>

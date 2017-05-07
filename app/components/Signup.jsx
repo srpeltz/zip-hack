@@ -21,16 +21,12 @@ export var Signup = React.createClass({
 	render: function() {
 		return (
 		<div className='modal'>
-			<a className='trigger' onClick={this.launchModal}>
-				<button type="button" className="button button-padding">Sign up</button>
-			</a>
+			<button type="button" className="button button-padding" onClick={this.launchModal}>Sign up</button>
 
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
 						<h1>Sign Up</h1>
-						<br/>
 						<form>
 							<div className="row">
 							    <div className="small-3 columns">
@@ -67,7 +63,10 @@ export var Signup = React.createClass({
 							    </div>
 							</div>
 
+							<br/>
+
 							<div className="input-group-button">
+								<a href="#" className="alert-text" onClick={this.closeModal}>Close</a>
     							<input type="submit" className="button" value="Sign up"></input>
   							</div>				 
 						</form>

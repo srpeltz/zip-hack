@@ -24,7 +24,7 @@ export var Strategy = React.createClass({
 		}
 		return (
 		<div>
-			<h1>Strategy</h1>
+			<h1 className='page-title'>Strategy</h1>
 			{renderStrategy()}
 		</div>
 		)
