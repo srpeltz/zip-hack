@@ -33,8 +33,8 @@ export var Login = React.createClass({
 			{this.state.open &&
 				<div className='background'>
 					<div className='trigger' className='content'>
-						<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
-						<h1>Log In</h1>
+						
+						<h3>Welcome</h3>
 						<br/>
 						<form>
 						  	<div className="row">
@@ -55,9 +55,10 @@ export var Login = React.createClass({
 							    </div>
 						    </div>
 
-						    <div className="input-group-button">
-    							<input type="submit" className="button" value="Log in" onClick={this.handleClick}></input>
-  							</div>
+						    <div class="input-group-button">
+    							<input type="submit" className="button login-form-button" value="Login"></input>
+    							<a type="button" className="alert button" onClick={this.closeModal}>Close</a>
+  							</div>	
 						</form>
 					</div>
 				</div>

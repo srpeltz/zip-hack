@@ -1,12 +1,42 @@
 .bulletin {
-	color: white;
+	color: black;
 	width: 100%;
-	padding: 15px;
-	margin: 0 0 10px;
-	background-color: #8a8a8a;
-	border: 3px solid #cacaca;
+	margin: 0 0 5px;
+	padding: 5px;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid #9cca18;
 }
 
-.suggestion {
-	border: 3px solid #1779ba;
+.type {
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.company,
+.title,
+.contact-name,
+.position,
+.round {
+	text-align: left;
+}
+
+.contact-applied, 
+.contact-followup,
+.contact-phone,
+.contact-email,
+.date {
+	text-align: right;
+}
+
+.contact-name, 
+.position {
+	text-decoration: bold;
+	color: #9cc750;
+}
+
+img {
+	max-width: 150px;
+	max-height: 150px;
+	padding-bottom: 5px
 }
