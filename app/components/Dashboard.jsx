@@ -14,17 +14,19 @@ export var Dashboard = React.createClass({
 			
 			<div className="bulletin goals">
 				<div className="row">
-					
 					<div className="small-4 columns">
 						<img src='http://placehold.it/150x150'></img>
+						<p>App Goals</p>
 					</div>
 					
 					<div className="small-4 columns">
 						<img src='http://placehold.it/150x150'></img>
+						<p>Interview Goals</p>
 					</div>
 
 					<div className="small-4 columns">
 						<img src='http://placehold.it/150x150'></img>
+						<p>Follow-ups Goals</p>
 					</div>
 				</div>
 				
@@ -45,8 +47,8 @@ var dummyBulletins = [{
 	company: 'Ziprecruiter',
 	position: 'Software Developer',
 	location: 'Los Angeles, CA',
-	created_at: 'May 1, 2017',
-	applied: 'Status: Pending'
+	created_at: 'Date Applied: May 1, 2017',
+	applied: 'Status: Applied'
 },{
 	id: 3,
 	urgent: false,
@@ -54,7 +56,7 @@ var dummyBulletins = [{
 	company: 'General Assembly',
 	position: 'Software Developer Instructor',
 	location: 'Los Angeles, CA',
-	created_at: 'April 28, 2017',
+	created_at: 'Date Applied: April 28, 2017',
 	applied: 'Status: Applied'
 },{
 	id: 4,
@@ -65,7 +67,9 @@ var dummyBulletins = [{
 	email: 'janesmith@gmail.com',
 	phone: '555-555-5555',
     company: 'Zip Recruiter',
-    title: 'Recruiter'
+    title: 'Recruiter',
+    followup: 'Follow-up: Pending',
+    interaction: 'Met during Ziprecruiter hackathon. Need to followup (attach resume). Note: enjoys organizing team offsites! Include article on team culture in email.'
 },{
 	id: 5,
 	urgent: false,
@@ -74,7 +78,8 @@ var dummyBulletins = [{
     email: 'alex@gmail.com',
     phone: '555-555-5552',
     company: 'General Assembly',
-    title: 'Web Developer Instructor'
+    title: 'Web Developer Instructor',
+    interaction: 'Studied together.'
 },{
 	id: 6,
 	urgent: false,
@@ -83,15 +88,16 @@ var dummyBulletins = [{
     email: 'steve@gmail.com',
     phone: '555-555-5551',
     company: 'Freelance',
-    title: 'Web Developer'
+    title: 'Web Developer',
+    interaction: 'Worked on the hackathon together. Consider working together on a project.'
 },{
 	id: 7,
 	urgent: true,
 	type: 'interview',
 	company: 'Ziprecruiter',
-	position: 'Software Developer',
+	role: 'Software Developer',
 	round: 'Phone Interview',
-	date: 'May 6, 2017',
+	date: 'Interview date: May 6, 2017',
 	contacts: [{
 		name: 'Steven Peltzer',
     	email: 'steve@gmail.com',
@@ -104,9 +110,9 @@ var dummyBulletins = [{
 	urgent: true,
 	type: 'interview',
 	company: 'General Assembly',
-	position: 'Software Developer Instructor',
+	role: 'Software Developer Instructor',
 	round: 'Technical Interview',
-	date: 'May 8, 2017',
+	date: 'Interview date: May 8, 2017',
 	contacts: [{
 		name: 'Steven Peltzer',
     	email: 'steve@gmail.com',
