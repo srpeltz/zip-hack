@@ -5,6 +5,9 @@ var React = require('react'),
 import App from 'App'
 import Landing from 'Landing'
 import Dashboard from 'Dashboard'
+import Strategy from 'Strategy'
+import Applications from 'Applications'
+import Network from 'Network'
 
 // Load foundation
 require('style!css!foundation-sites/dist/foundation.min.css')
@@ -19,6 +22,9 @@ ReactDOM.render(
 		<Route component={App}>
 			<Route path='/' component={Landing}/>
 			<Route path='/dashboard' component={Dashboard}/>
+			<Route path='/strategy' component={Strategy}/>
+			<Route path='/applications' component={Applications}/>
+			<Route path='/network' component={Network}/>
 		</Route>
 	</Router>,
 	document.getElementById('app')

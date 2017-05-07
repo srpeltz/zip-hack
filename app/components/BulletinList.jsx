@@ -8,11 +8,13 @@ export var BulletinList = React.createClass({
 	render: function() {
 		var {bulletins} = this.props
 
-		var renderBulletins = () => {
+		var renderBulletins = (urgent) => {
 			if (bulletins.length === 0) {
 				return <p>No bulletins...</p>
 			} else {
-				return bulletins.map((bulletin) => {
+				return bulletins.filter((bulletin) => {
+					return bulletin.urgent === urgent
+				}).map((bulletin) => {
 					return (
 						<Bulletin key={bulletin.id} {...bulletin}/>
 					)
@@ -22,7 +24,12 @@ export var BulletinList = React.createClass({
 
 		return (
 			<div>
-				{renderBulletins()}
+				<div className='urgent'>
+					{renderBulletins(true)}
+				</div>
+				<div className='regular'>
+					{renderBulletins(false)}
+				</div>
 			</div>
 		)
 	}
