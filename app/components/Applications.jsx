@@ -7,7 +7,7 @@ export var Applications = React.createClass({
 		return (
 		<div>
 			<h1>Applications</h1>
-			
+			<button className="button button-padding">New Job Application</button>
 		</div>
 		)
 	}

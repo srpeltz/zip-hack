@@ -1,7 +1,12 @@
+// Foundation
+@import 'base/foundation-settings';
+@import 'foundation';
+@include foundation-everything;
 
 @import 'base/variables';
 @import 'base/normalize';
 
+// Components
 @import 'components/app';
 @import 'components/navbar';
 @import 'components/bulletin';

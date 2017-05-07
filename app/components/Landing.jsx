@@ -21,6 +21,7 @@ export var Landing = React.createClass({
 			<div className="small-12 columns">
 				<div className="text-center">
 					<Signup/>
+					<Login/>
 				</div>
 			</div>
 		</div>
