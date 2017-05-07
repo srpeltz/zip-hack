@@ -66,9 +66,10 @@ export var Signup = React.createClass({
 
 							<br/>
 
-							<div class="input-group-button">
+							<div className="input-group-button">
+								<a href="#" className="alert-text" onClick={this.closeModal}>Close</a>
     							<input type="submit" className="button" value="Sign up"></input>
-    							<a type="button" className="alert button" onClick={this.closeModal}>Close</a>		
+	
   							</div>
 						</form>
 					</div>
