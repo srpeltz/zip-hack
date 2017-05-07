@@ -1,3 +1,7 @@
+.bulletins {
+	overflow-y: scroll;
+}
+
 .bulletin {
 	color: black;
 	width: 100%;
@@ -17,7 +21,9 @@
 .title,
 .contact-name,
 .position,
-.round {
+.round,
+.role,
+.interaction {
 	text-align: left;
 }
 
@@ -29,14 +35,30 @@
 	text-align: right;
 }
 
-.contact-name, 
-.position {
-	text-decoration: bold;
-	color: #9cc750;
-}
-
 img {
 	max-width: 150px;
 	max-height: 150px;
 	padding-bottom: 5px
 }
+
+
+.interview {
+	border: 2px solid darkgrey;
+}
+.round {
+	color: darkgrey;
+	text-decoration: bold;
+}
+
+.contact{
+	border: 2px solid #b2e522;
+}	
+.contact-name {
+	color: #b2e522;
+	text-decoration: bold;
+}
+
+.application {
+	color: #9cca18;
+	text-decoration: bold;
+} 

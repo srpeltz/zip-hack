@@ -45,8 +45,8 @@ var dummyBulletins = [{
 	company: 'Ziprecruiter',
 	position: 'Software Developer',
 	location: 'Los Angeles, CA',
-	created_at: 'May 1, 2017',
-	applied: 'Status: Pending'
+	created_at: 'Date Applied: May 1, 2017',
+	applied: 'Status: Applied'
 },{
 	id: 3,
 	urgent: false,
@@ -54,7 +54,7 @@ var dummyBulletins = [{
 	company: 'General Assembly',
 	position: 'Software Developer Instructor',
 	location: 'Los Angeles, CA',
-	created_at: 'April 28, 2017',
+	created_at: 'Date Applied: April 28, 2017',
 	applied: 'Status: Applied'
 },{
 	id: 4,
@@ -65,7 +65,9 @@ var dummyBulletins = [{
 	email: 'janesmith@gmail.com',
 	phone: '555-555-5555',
     company: 'Zip Recruiter',
-    title: 'Recruiter'
+    title: 'Recruiter',
+    followup: 'Follow-up: Pending',
+    interaction: 'Met during Ziprecruiter hackathon. Need to followup (attach resume). Note: enjoys organizing team offsites! Include article on team culture in email.'
 },{
 	id: 5,
 	urgent: false,
@@ -89,9 +91,9 @@ var dummyBulletins = [{
 	urgent: true,
 	type: 'interview',
 	company: 'Ziprecruiter',
-	position: 'Software Developer',
+	role: 'Software Developer',
 	round: 'Phone Interview',
-	date: 'May 6, 2017',
+	date: 'Interview date: May 6, 2017',
 	contacts: [{
 		name: 'Steven Peltzer',
     	email: 'steve@gmail.com',
@@ -104,9 +106,9 @@ var dummyBulletins = [{
 	urgent: true,
 	type: 'interview',
 	company: 'General Assembly',
-	position: 'Software Developer Instructor',
+	role: 'Software Developer Instructor',
 	round: 'Technical Interview',
-	date: 'May 8, 2017',
+	date: 'Interview date: May 8, 2017',
 	contacts: [{
 		name: 'Steven Peltzer',
     	email: 'steve@gmail.com',
