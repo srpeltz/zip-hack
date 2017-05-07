@@ -1,6 +1,7 @@
 
 import React from 'react'
 import {Link} from 'react-router'
+import Login from 'Login'
 
 export var Navigation = React.createClass({
 	render: function() {
@@ -11,6 +12,7 @@ export var Navigation = React.createClass({
 			      <li className="menu-text topbar-submenu-background">Job Tracker</li>
 			      <li className="topbar-submenu-background"><a href="/">Home</a></li>
 			      <li className="topbar-submenu-background"><a href="/dashboard">Dashboard</a></li>
+			      <li className="topbar-submenu-background"><Login/></li>
 			    </ul>
 			  </div>
 			</div>

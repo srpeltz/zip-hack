@@ -22,7 +22,7 @@ export var Login = React.createClass({
 		return (
 		<div className='modal'>
 			<a className='trigger' onClick={this.launchModal}>
-				<button type="button" className="button">Log In</button>
+				<div>Log In</div>
 			</a>
 
 			{this.state.open &&
@@ -52,7 +52,7 @@ export var Login = React.createClass({
 
 						    <div class="input-group-button">
     							<input type="submit" class="button" value="Log in"></input>
-  							</div>	
+  							</div>
 						</form>
 					</div>
 				</div>
